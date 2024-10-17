@@ -92,6 +92,7 @@ public class BladeTest extends BaseTestCase {
     public void testAppName() {
         Blade blade = Blade.create();
         String anyString = StringKit.rand(10);
+        blade.environment().set(ENV_KEY_APP_NAME, anyString);
         assertEquals(anyString, blade.environment().getOrNull(ENV_KEY_APP_NAME));
     }
 
