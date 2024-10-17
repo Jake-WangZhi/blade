@@ -199,7 +199,7 @@ public class BladeTest extends BaseTestCase {
     public void testShowFileList() {
         Blade blade = Blade.create();
         blade.staticOptions(StaticOptions::showList);
-        assertEquals(Boolean.FALSE, blade.staticOptions().isShowList());
+        assertEquals(Boolean.TRUE, blade.staticOptions().isShowList());
     }
 
     @Test
